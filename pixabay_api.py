@@ -26,22 +26,24 @@ print(url)
 def total_images(num):
     url = [ims['hits'][i]['largeImageURL'] for i in range(num)]
     return url
+user_name = input("Enter Your name :")
     
-filename="ImagePixabay"
-Path(filename).mkdir(parents=True, exist_ok =True)
-a=input("Enter the user name:")
+username=str(user_name)
+Path(username).mkdir(parents=True, exist_ok =True)
+user_input=input("Enter the folder name what you want to name it:")
 with open ('data.txt', 'a') as f:
-    f.write(a)
+    f.write(user_input)
     f.write('\n')
-    if a in 'data.txt':
+    if user_input in 'data.txt':
         pass
     else:
-        filename = str(a)
-        Path(filename).mkdir(parents=True, exist_ok =True)
+        filename = str(user_input)
+        Path(username+'/'+filename).mkdir(parents=True, exist_ok =True)
     
 for i in range(len(url)):
     #open the destination file in wb mode.
-    save_img=open(os.getcwd()+'/'+filename+'/{}_{}.jpg'.format(i,q),'wb')
+    x=f"(os.getcwd()+'/{username}'+'/'+filename+'/{i}_{q}.jpg')"
+    save_img=open(x,'wb')
     print("save_img",save_img)
     req = r.get(url[i],stream = True)
     print((req.raw))
