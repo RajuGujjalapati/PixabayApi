@@ -7,4 +7,4 @@ If user doesn't exist we are creating the 'New User Folder' with his/her name.
 If user already exists then we are adding their data to his/her existing dir.
 **I am saving the user data using 'shutil' package**
 
-I will try to update this with **How to get collect videos data**
+I will try to update this with **How to collect video files using this api.**
