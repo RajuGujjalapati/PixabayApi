@@ -1,10 +1,15 @@
 # PixabayApi
-In this code you will able to find the how to get image data using PixabayApi.
-we are getting the images data as per the user requirement, Your will able to give his/her credentials according to their use.
-And we are the user for their name, once he filled his name, we are checking with our data whether user is exist or not.
-User name will be stored in data.txt file.
-If user doesn't exist we are creating the 'New User Folder' with his/her name.
-If user already exists then we are adding their data to his/her existing dir.
+Here i am going to explain why and what is the use of this api.
+
+I have applied for an job, they asked me to do a deep learning model to qualify first round.
+Unfortunality, being a new model i have to collect a 100's of images of different species.
+I explored this api (unfortunatly) for my web developement project, and used the same to download the differnet species.
+
+How the code works?
+Whenever we'r running the prgm, type the name of the images you want to download.
+The code automatically downloads 10 pages of images by creating seperate folders of each page with all images on that page with time.
+
+
 **I am saving the user data using 'shutil' package**
 
 I will try to update this with **How to collect video files using this api.**
